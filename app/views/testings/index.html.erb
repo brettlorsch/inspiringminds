@@ -1,0 +1,13 @@
+<h1>Hello</h1>
+
+<% @testings.each do |testing| %>
+    <%= testing.title %>
+    <%= testing.body %>
+
+       <%= link_to 'Show', testing %>
+       <%= link_to 'Edit', testing %>
+       <%= link_to 'Destroy', testing, method: :delete, data: { confirm: 'Are you sure' } %>
+
+       <% end %>
+
+       <p><%= link_to 'New', new_testing_path %></p>
