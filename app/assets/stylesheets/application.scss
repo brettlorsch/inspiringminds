@@ -5,13 +5,16 @@
  */
 
 /* Links */
+body {
+  background-color: black;
+}
 a,
 a:focus,
 a:hover {
   color: #A8B825;
 }
 
-/* #background {
+ #background {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -23,9 +26,9 @@ a:hover {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background: image-url('home_bg.png') no-repeat;
-  background-size: cover;
+  background-color: black;
 }
-*/
+
 .nav-links {
   color: green;
   text-align: center;
