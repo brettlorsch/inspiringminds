@@ -1,0 +1,31 @@
+<%= form_with(model: test, local: true) do |form| %>
+  <% if test.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(test.errors.count, "error") %> prohibited this test from being saved:</h2>
+
+      <ul>
+      <% test.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :question %>
+    <%= form.text_field :question, id: :test_question, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :answer %>
+    <%= form.label :answer, "true", :value => "true" %>
+    <%= form.radio_button :answer, "true", :value => "true" %>
+    
+    <%= form.label :answer, "false", :value => "false" %>
+    <%= form.radio_button :answer, "false", :value => "false" %>
+  </div> 
+
+  <div class="actions">
+    <%= form.submit "Submit answer", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -60,6 +60,7 @@ a:hover {
   margin-left: 10%;
   margin-right: 15%;
   margin-top: 10%;
+  margin-bottom: 10%;
   font-size: 1.5em;
   width: 80%;
   /*text-align: center;*/
@@ -140,5 +141,30 @@ a:hover {
     padding: 15px;
     text-align: center;
     }
+
+    .container {
+    color: white;
+    }
+
+    $height-footer: 90px;
+
+html {
+  min-height: 100%;
+  position: relative;
+  body {
+  margin-bottom: $height-footer;
+  }
+  #footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: $height-footer;
+    background-color: grey;
+    .footer-block {
+    margin-left: -20%;
+    }
+  }
+}
+
 
  

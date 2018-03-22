@@ -1,12 +1,12 @@
 <div class="header">
-  <div class="container">
+  <div class="container-fluid">
     <div class='nav-links main-menu'>
       <%= link_to "Home", root_path %>
       <%= link_to "About", pages_about_path %>
       <%= link_to "Contact", pages_contact_path %>
       <%= link_to "Admission", pages_admission_path %>
       <%= link_to "Resources", pages_resources_path %>
-      <%= link_to "Testing", testings_path %>
+      <%= link_to "Testing", tests_path %>
       <% if current_user %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete %>
       <% else %>
