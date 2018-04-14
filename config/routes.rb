@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :tests
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   get 'pages/home', to: 'pages#home'
 
@@ -14,8 +13,9 @@ Rails.application.routes.draw do
   get 'pages/kelly', to: 'pages#kelly'
 
   get 'pages/dawn', to: 'pages#dawn'
+  
+  get 'pages/test', to: 'pages#test'
 
-  resources :testings
 
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
