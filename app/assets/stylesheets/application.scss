@@ -44,9 +44,8 @@ a:hover {
   margin-top: 3%;
   }
 
-  .btn-secondary {
+  .btn-primary {
   border-radius: 15px;
-  background-color: gray;
   padding-right: 15px;
   }
 
@@ -138,11 +137,11 @@ html {
     position: absolute;
     height: $height-footer;
     background-color: grey;
-    
-    .footer-block {
-    color: white;
-    }
   }
+}
+
+.footer-block {
+    color: white;
 }
 
 .footer-content {
