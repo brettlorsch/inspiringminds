@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
   get 'pages/dawn', to: 'pages#dawn'
   
+  get 'pages/doreen', to: 'pages#doreen'
+
+  get 'pages/christine', to: 'pages#christine'
+  
   get 'pages/test', to: 'pages#test'
 
 

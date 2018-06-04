@@ -1,12 +1,13 @@
 @import "bootstrap";
 
-/*
- * Globals
- */
+/* Globals */
+* {
+  font-family: sans-sarif;
+}
 
 /* Links */
 body {
-  background-color: black;
+  background-color: #AFBE52;
 }
 a,
 a:focus,
@@ -88,10 +89,11 @@ color: #A8B825;
 }
 
 .header  {
-background-color: grey;
+background-color: white;
 display: block;
 width: 100%;
 height: 400px;
+margin-top: 0;
     
 }
 
@@ -104,7 +106,7 @@ justify-content: space-between;
 background-color: #A8B825;
 width: 50%;
 margin-left: 25%;
-padding: 15px;
+padding: 25px;
 }
 
 .body {
@@ -136,12 +138,12 @@ html {
     width: 100%;
     position: absolute;
     height: $height-footer;
-    background-color: grey;
+    background-color: white;
   }
 }
 
 .footer-block {
-    color: white;
+    color: black;
 }
 
 .footer-content {
@@ -155,3 +157,58 @@ html {
 .google-form {
   text-align: center;
 }
+
+/* Media Queries */
+
+@media (max-width: 2560px) {
+  .carousel-inner {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 1042px) {
+  .main-menu {
+    font-size: 1.2rem;
+  }
+  .carousel-inner {
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    font-size: .9rem;
+  }
+  .home-image {
+    width: 100%;
+    /*height: 250px;*/
+  }
+  .carousel-inner {
+    margin-bottom: 13%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-menu {
+    font-size: .7rem;
+  }
+  .home-image {
+    width: 100%;
+    /*height: 250px;*/
+  }
+  .carousel-inner {
+    margin-bottom: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
